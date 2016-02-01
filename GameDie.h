@@ -1,3 +1,5 @@
+#include<stdlib.h>
+#include<time.h>
 #ifndef GAMEDIE_H
 #define GAMEDIE_H
 
@@ -8,5 +10,5 @@ class GameDie
    int roll();
 };
 
-#include "GameDie.cpp"
+//#include "GameDie.cpp"
 #endif
