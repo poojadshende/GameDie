@@ -3,13 +3,19 @@
 //class constructor that seeds the random number generator
 GameDie::GameDie()
 {
-   srand(time(NULL));
+   //srand(time(NULL));
 }
 
-//generate a random number between 1-6 (inclusive) and return it
-int GameDie::roll()
+GameDie::GameDie(int a)
+{
+   number=a;
+}
+
+//generate a random number between 1-20 (inclusive) and return it
+int GameDie::roll(int a)
 {
    int randomNumber;
-   randomNumber=rand()%6+1;
+   srand(time(NULL));
+   randomNumber=rand()%a+1;
    return randomNumber;
 }
